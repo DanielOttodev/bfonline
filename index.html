@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Online Interface Monitor 2.0</title>
+  </head>
+  <body onload="startTime()">
+   <div class="container">
+     <div class="row">
+       <div class="col">
+    <img src="images/bf_logo.png" class=img-fluid" alt="" srcset="">
+    <span id="txt"></span>
+  </div>
+  <div class="col">
+      <h2 class="text-center m-3">Computer Temperature <i class="fas fa-temperature-low"></i>
+      </h2>
+      <h5>Hawthorn East: <i>16 Degrees c </i><i class="fas fa-smile"></i></h5>
+      <h5>Vocus: <i>14 Degrees c </i><i class="fas fa-smile"></i></h5>
+      <div class="alert alert-danger" role="alert">
+          Temperature has risen more then 8degrees (20%) in the last 45 minutes at VOCUS -- <a href="#" class="alert-link">Click here</a> to dismiss warning
+        </div>
+  </div>
+  </div>
+  </div>
+       <!-------------------------------------------------------------------------------------------------------------------------->
+    <div class="jumbotron">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Phantom</th>
+            <th scope="col">Status</th>
+            <th scope="col">Time On</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">ATM.FDI</th>
+            <td><span class="badge badge-pill badge-success">ON</span></td>
+            <td>12/09/19 17:32:01</td>
+
+          </tr>
+          <tr>
+            <th scope="row">AUTOPP.PHANTOM</th>
+            <td><span class="badge badge-pill badge-success">ON</span></td>
+            <td>12/09/19 17:32:01</td>
+          </tr>
+          <tr>
+            <th scope="row">NPPMESSAGEOUT</th>
+            <td><span class="badge badge-pill badge-success">ON</span></td>
+            <td>12/09/19 17:32:01</td>
+          </tr>
+          <tr>
+            <th scope="row">OAS Archiver</th>
+            <td><span class="badge badge-pill badge-warning">OFF</span></td>
+            <td>12/09/19 17:32:01</td>
+          </tr>
+          <tr>
+            <th scope="row">MQPHANTOM</th>
+            <td><span class="badge badge-pill badge-danger">FAILURE</span></td>
+            <td>12/09/19 17:32:01</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+        <!-------------------------------------------------------------------------------------------------------------------------->
+    <div class="container">
+        <h2 class="text-center m-3">Telephone Banking (IVR)</h2>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card bg-light border-primary  text-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">IVR 1</div>
+            <div class="card-body">
+              <h5 class="card-title">v3328</h5>
+              <span class="badge badge-pill badge-success">ON</span>
+              <p class="card-text">Time on :</p>
+            </div>
+        </div>
+        </div> 
+        <div class="col-sm">
+          <div class="card bg-light border-primary  text-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">IVR 2</div>
+            <div class="card-body">
+              <h5 class="card-title">v3327</h5>
+              <span class="badge badge-pill badge-success">ON</span>
+              <p class="card-text">Time on :</p>
+            </div>
+        </div>
+        </div> 
+        <div class="col-sm">
+          <div class="card bg-light border-danger  text-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">IVR DR</div>
+            <div class="card-body">
+              <h5 class="card-title">v3330</h5>
+              <span class="badge badge-pill badge-danger">FAILURE</span>
+              <p class="card-text ">Time on : xxxx</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <div class="jumbotron"> 
+      <div class="row">
+        <div class="col">
+        <h2 class="text-center m-3">FirstData</h2>
+        <h5 class="text-center m-3">ATM Phantom Processes</h5>
+        <table class="table table-striped table-dark">
+            <thead>
+              
+              <tr>
+                <th scope="col">Phantom</th>
+                <th scope="col">Status</th>
+                <th scope="col">Time Started</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">AS2805</th>
+                <td><span class="badge badge-pill badge-success">ON</span></td>
+                <td>03/06/2019 06:00:01</td>
+              </tr>
+              <tr>
+                  <td scope="row">FDI.COMMS</th>
+                  <td><span class="badge badge-pill badge-success">ON</span></td>
+                  <td>03/06/2019 06:00:01</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+      <div class="col">
+          <h2 class="text-center m-3">Web DE <i class="fas fa-cogs"></i></h2>
+          
+          
+          <table class="table table-bordered table-primary">
+          <h5 class="text-center m-3" id="change">Responders</h5>
+              <thead>
+                <tr>
+                  <th scope="col">Server</th>
+                  <th scope="col">Busy</th>
+                  <th scope="col">Available</th>
+                  <th scope="col">Wait</th>
+                  <th scope="col">Slow</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">vtu-app-8437</th>
+                  <td>0</td>
+                  <td>6</td>
+                  <td id="test">Hey</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">vtu-mvp-8438</th>
+                  <td>0</td>
+                  <td >0</td>
+                  <td class="table-warning">3</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">vtu-pnr-8439</th>
+                  <td class="">0</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td class="table-danger">4</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      </div>
+    </div>
+       <!-------------------------------------------------------------------------------------------------------------------------->
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Small modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content alert-danger">
+     <h1 class="text-center">WARNING</h1>
+     <h3>WEB DE : PnR01IIS has 5 SLOW Responders</h3>
+
+    </div>
+  </div>
+</div>
+<div class="container">
+  <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+</div>
+       <!-------------------------------------------------------------------->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/fa05a38474.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+ $(function () {
+    var socket = io();
+    $('form').submit(function(e){
+      e.preventDefault(); // prevents page reloading
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    socket.on('broadcast',function(data) {
+         let upd = document.getElementById('test');
+         upd.innerHTML = data.value
+         console.log(data);
+  
+      });
+  });
+    </script>
+    <script src="client.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+

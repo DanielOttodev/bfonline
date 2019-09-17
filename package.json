@@ -1,0 +1,17 @@
+{
+  "name": "online-interface-monitor",
+  "version": "1.0.0",
+  "description": "Bank First Environment Monitor",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Daniel Otto",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "@types/socket.io": "^2.1.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
